@@ -52,6 +52,17 @@ const Game = (props) => {
   };
 
   useEffect(() => {
+    localStorage.setItem("highscore", JSON.stringify(heighscore));
+  }, [heighscore]);
+
+  useEffect(() => {
+    const heighscore = JSON.parse(localStorage.getItem("highscore"));
+    if (heighscore) {
+      setItems(heighscore);
+    }
+  }, []);
+
+  useEffect(() => {
     const call = () => {
       axios.get(`${EndPoint}/api/countries/game`).then((res) => {
         setCountries(res.data);
