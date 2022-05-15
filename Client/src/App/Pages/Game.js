@@ -9,6 +9,7 @@ import { isCorrect } from "../Utils/Engine";
 
 import LoosingScreen from "../Components/LoosingScreen";
 import "../Styles/Game.css";
+import "../Styles/Mobile.css";
 
 const Game = (props) => {
   const [answered, setAnswered] = useState(false);
