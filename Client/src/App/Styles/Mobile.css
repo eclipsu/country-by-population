@@ -16,6 +16,9 @@
 
   .blue-vsblock .img,
   .red-vsblock .img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100%;
     width: 100%;
     z-index: 99;
@@ -71,29 +74,6 @@
     border-radius: 50%;
   }
 
-  .vs-data {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-
-    position: absolute;
-    top: 40%;
-    bottom: 50%;
-    left: 40%;
-    right: 50%;
-    z-index: 2;
-    padding: 20px;
-
-    height: 60px;
-    width: 60px;
-
-    font-family: "Roboto", sans-serif;
-    font-size: 1.9em;
-    text-align: center;
-    font-weight: 500;
-    color: white;
-  }
   .vs-data h1 {
     font-size: 1.3em;
   }
