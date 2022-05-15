@@ -1,0 +1,104 @@
+@media only screen and (max-width: 850px) {
+  .image_container {
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  @import url("https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,500,500i,700,700i,900,900i");
+
+  body {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+  }
+
+  .blue-vsblock .img,
+  .red-vsblock .img {
+    height: 100%;
+    width: 100%;
+    z-index: 99;
+  }
+
+  .image_container .vsblock {
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+  }
+
+  .blue-vsblock::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(90deg, #13d6f8 0%, #1aeaf1 100%);
+    opacity: 0.45;
+  }
+
+  .red-overlay::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, #7e13f8 0%, #5b1af1 100%);
+    opacity: 0.45;
+  }
+
+  .score-counter {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    z-index: 2;
+    padding: 20px;
+
+    height: 30px;
+    width: 30px;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 1.9em;
+    color: black;
+    text-align: center;
+    font-weight: 500;
+
+    background-color: rgb(255, 255, 255);
+
+    border-radius: 50%;
+  }
+
+  .vs-data {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    position: absolute;
+    top: 40%;
+    bottom: 50%;
+    left: 40%;
+    right: 50%;
+    z-index: 2;
+    padding: 20px;
+
+    height: 60px;
+    width: 60px;
+
+    font-family: "Roboto", sans-serif;
+    font-size: 1.9em;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+  }
+  .vs-data h1 {
+    font-size: 1.3em;
+  }
+
+  .vs-control-buttons button {
+    font-size: 0.6em;
+  }
+}
