@@ -1,0 +1,32 @@
+.vs-control-buttons {
+  width: 315px;
+}
+.control-buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  z-index: 2;
+  padding: 20px;
+}
+
+.control-buttons button {
+  cursor: pointer;
+  background: white;
+  border: none;
+  border-radius: 35px;
+  width: 144px;
+  height: 56px;
+  font-size: 0.9em;
+  transition-duration: 0.4s;
+}
+
+.control-buttons button:hover {
+  background-color: #f0f0f0; /* Green */
+}
+
+.control-buttons button:active {
+  background-color: rgb(151, 255, 206);
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
