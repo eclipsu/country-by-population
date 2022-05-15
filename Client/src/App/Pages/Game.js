@@ -52,7 +52,7 @@ const Game = (props) => {
   };
 
   useEffect(() => {
-    localStorage.setItem("highscore", JSON.stringify(heighscore));
+    localStorage.setItem("highscore", JSON.stringify(highscore));
   }, [heighscore]);
 
   useEffect(() => {
